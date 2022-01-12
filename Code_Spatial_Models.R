@@ -50,7 +50,7 @@ summary(
 pmg(T.mean ~ T.G_Nuclear, data = FEP_Stata_2018)
 pmg(T.mean ~ T.G_Fossil +T.G_Hydro +T.G_Wind+ T.G_Nuclear+ T.G_Solar +T.G_Others +T.Forecast_load, data = FEP_Stata_2018, model = "cmg")
 
-#SDM Dynamic e
+#SDM Dynamic 
 
 w_Variables<- function(W_matrix, Variable){
   kronecker(W_matrix, diag(1, 1096)) %*% Variable #diag is the dimension of T in my panel Data
@@ -90,4 +90,4 @@ sdm_obj2 <- spatialreg::lagsarlm(av55_59 ~ transp + salesTax, used.cars, listw=l
 
 impac1 <- impacts(SDM, listw = mat2listw(W_matrix, style = "W"), time = 1096, R=5)
 
-impacts.
+
