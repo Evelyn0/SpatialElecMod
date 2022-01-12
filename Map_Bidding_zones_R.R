@@ -74,3 +74,4 @@ Map[5,3]<-st_as_sf(
 Map$id<- c("AUT", "BEL", "CHE","CZE","DE-LU","DNK1", "DNK2", "EST", "ESP","FIN", "FRA", "GBR","ITA-CN", "ITA-CS", "ITA-N", "ITA-S", 
            "LTU", "LVA", "NLD", "NOR1", "NOR2", "NOR3", "NOR4", "NOR5", "POL", "PRT", "SWE")
 
+plot(Map[,2:3])
