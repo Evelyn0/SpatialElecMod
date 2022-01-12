@@ -65,10 +65,10 @@ Map[12,3]<-st_as_sf(
 )
 
 #Step 2: Eliminate LU and Create DE-LU zone
-
 Map<-Map[-18,]
+
 Map[5,3]<-st_as_sf(
-  unionSpatialPolygons(Delu,rep(1, nrow(Delu)))
+  unionSpatialPolygons(Delu,rep(1, 1))
 )
 
 Map$id<- c("AUT", "BEL", "CHE","CZE","DE-LU","DNK1", "DNK2", "EST", "ESP","FIN", "FRA", "GBR","ITA-CN", "ITA-CS", "ITA-N", "ITA-S", 
